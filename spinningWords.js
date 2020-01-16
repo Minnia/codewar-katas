@@ -10,13 +10,13 @@
 
 const spinWords = string => {
   const splitWords = string.split(" ");
-  const correctWords = splitWords.map(word => {
+  const correctWordsLength = splitWords.map(word => {
     if (word.length >= 5) {
       return [...word].reverse().join("");
     }
     return word;
   });
-  return correctWords.join(" ");
+  return correctWordsLength.join(" ");
 };
 console.log(spinWords("Hey fellow warriors"));
 console.log(spinWords("This is a test"));
